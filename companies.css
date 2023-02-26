@@ -472,7 +472,7 @@ html{
 
 .g-star-header{
     display: flex;
-    background: url("c-images/g-star-header.png") no-repeat center;
+    background: url("./c-images/g-star-header.png") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -883,7 +883,7 @@ html{
         width: 100%;
         left: -100%;
         top: 0;
-        background: url("images/menu-bg.jpg") no-repeat center;
+        background: url("./images/menu-bg.jpg") no-repeat center;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
@@ -944,7 +944,7 @@ html{
         width: 100%;
         left: -100%;
         top: 0;
-        background: url("images/menu-bg.jpg") no-repeat center;
+        background: url("./images/menu-bg.jpg") no-repeat center;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
