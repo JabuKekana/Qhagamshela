@@ -472,7 +472,7 @@ html{
 
 .header{
     display: flex;
-    background: url("images/home-header-bg.jpg") no-repeat center;
+    background: url("./images/home-header-bg.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -1098,7 +1098,7 @@ html{
         width: 100%;
         left: -100%;
         top: 0;
-        background: url("images/menu-bg.jpg") no-repeat center;
+        background: url("./images/menu-bg.jpg") no-repeat center;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
@@ -1347,7 +1347,7 @@ html{
 }
 
 .portfolio .port-content .card:hover{
-    background: url("images/home-header-bg.jpg") no-repeat center;
+    background: url("./images/home-header-bg.jpg") no-repeat center;
 }
 
 .portfolio .port-content .card .box{
