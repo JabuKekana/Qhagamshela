@@ -1,0 +1,915 @@
+/* ///////////////////////////////////// */
+/* ///////// TABLE OF CONTENTS //////// */
+/* /////////////////////////////////// */
+
+
+/*
+1. ALL SECTIONS & PAGES SIMILAR STYLING STARTS
+- Google font imports
+- Custom scroll bar styling
+- Navbar styling
+- Footer styling
+- Menu icon & scroll up bar styling
+
+2. HOME PAGE STYLING STARTS
+- Header section
+- About section
+- What we offer
+- Contant page
+
+3. PORTFOLIO SECTION STYLING STARTS
+
+ */
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////// */
+/* ///////////////////////////////////////////// */
+/* /// ALL SECTIONS & PAGES SIMILAR STYLING /// */
+/* /////////////////////////////////////////// */
+/* ////////////////////////////////////////// */
+
+
+
+
+
+/* //////// ALL SECTIONS & PAGES SIMILAR STYLING STARTS ////// */
+
+
+
+section{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+ .dictator, .about, .fekeza, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.dictator .dictator-content,
+.about .about-content,
+.dictator .dictator-content,
+.fekeza .fekeza-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .max-width{
+        max-width: 930px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+}
+
+
+
+/* //////// ALL SECTIONS & PAGES SIMILAR STYLING ENDS ////// */
+
+
+
+
+
+/* //////// GOOGLE IMPORTS STARTS ////// */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* //////// GOOGLE IMPORTS ENDS ////// */
+
+
+
+
+
+/* //////// CUSTOM SCROLL BAR STYLING STARTS ////// */
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+/* //////// CUSTOM SCROLL BAR STYLING ENDS ////// */
+
+
+
+
+
+/* //////// NAVBAR STYLING STARTS ////// */
+
+
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 15px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.navbar.sticky{
+    padding: 15px 0;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.navbar.sticky a{
+    color: #5104FC;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo img{
+    width: 48px;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    display: block;
+    color: #5104FC;
+    font-size: 18px;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a::after{
+    content: "";
+    width:0%;
+    height: 3px;
+    display: block;
+    background-color: #5104FC;
+    margin-top: 10px;
+}
+
+.navbar .menu li a:hover::after{
+    width: 100%;
+    color: #ffffff;
+}
+
+.navbar.sticky li a{
+    color: rgb(0, 0, 0);
+}
+
+.navbar.sticky .menu li a:hover{
+    color: #000000;
+}
+
+.nav-bg{
+    background-color: #ffffff;
+    color: #000000;
+    min-height: 70px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+
+
+/* //////// NAVBAR STYLING ENDS ////// */
+
+
+
+
+
+/* /////// FOOTER SECTION STYLING STARTS ////// */
+
+
+
+.links{
+    padding: 70px 0 70px 0;
+    background-color: #5104FC;
+}
+
+.links a{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px 0 0 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: underline #faf8ff 1px;
+    text-underline-offset: 8px;
+}
+
+.links a:hover{
+    color: rgb(193, 193, 193);
+}
+
+.links a::after{
+    content: "";
+    width:0%;
+    height: 3px;
+    display: block;
+    background-color: #5104FC;
+    margin-top: 10px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    background-color: #5104FC;
+    padding-bottom: 70px;
+}
+
+.footer-links_div {
+    width: 248px;
+    margin: 0.5rem;
+}
+
+.footer-links_div i {
+    font-size: 20px;
+    color: #5104FC;
+    padding: 13px;
+    margin: 4px;
+    background: #ffffff;
+    border-radius: 6px;
+}
+
+.footer-links_div i:hover {
+    font-size: 20px;
+    color: #5104FC;
+    padding: 13px;
+    margin: 4px;
+    background: #9d9c9c;
+    border-radius: 6px;
+}
+
+.footer-links_div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.footer-links_div h4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 17px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+}
+
+.footer-links_div p {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    font-family: var(--font-family);
+    color: rgb(255, 255, 255);
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.footer-links_div .underlined{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+@media screen and (max-width: 850px) {
+    .footer-heading h1 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer-heading h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    .footer-links div {
+        margin: 1rem 0;
+    }
+
+    .footer-btn p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer-heading h1 {
+        font-size: 27px;
+        line-height: 38px;
+    }
+}
+
+
+
+/* /////// FOOTER SECTION STYLING ENDS ////// */
+
+
+
+
+
+/* /////// MENU & SCROLL UP BUTTON STYLING STARTS /////// */
+
+
+
+.menu-btn{
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: rgb(0, 0, 0);
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
+
+
+@media (max-width: 500px) {
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+}
+
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+        color: rgb(255, 255, 255);
+    }
+}
+
+
+
+/* /////// MENU & SCROLL UP BUTTON STYLING ENDS /////// */
+
+
+
+
+/* /////////////////////////////////////////// */
+/* ////////////////////////////////////////// */
+/* ////// VIDEOS SAME STYLING/////////////// */
+/* //////////////////////////////////////// */
+/* /////////////////////////////////////// */
+
+
+.video-title{
+    font-family: 'Ubuntu', sans-serif;
+    color: #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.913));
+    font-size: 40px;
+    margin: 120px 0 60px 0;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.video-title-2{
+    font-family: 'Ubuntu', sans-serif;
+    color: #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.913));
+    font-size: 40px;
+    margin: 90px 0 60px 0;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+
+
+/* ////// G-STAR HOME PAGE STYLING STARTS ////// */
+
+
+
+
+
+
+
+
+
+/* ////// G-STAR HOME PAGE STYLING ENDS ////// */
+
+
+
+
+
+
+
+/* ///////////////////////////////////////////////// */
+/* //////////////////////////////////////////////// */
+/* ////// NIVEA PAGES STYLING STARTS ///////////// */
+/* ////////////////////////////////////////////// */
+/* ///////////////////////////////////////////// */
+
+
+
+/* ////// NIVEA HOME PAGE STYLING STARTS ////// */
+
+
+
+
+
+
+
+/* ////// NIVEA HOME PAGE STYLING ENDS ////// */
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////////////////// */
+/* //////////////////////////////////////////////// */
+/* ////// DICTATOR PAGES STYLING STARTS ///////////// */
+/* ////////////////////////////////////////////// */
+/* ///////////////////////////////////////////// */
+
+
+
+
+
+/* /////// DICTATOR HOME PAGE STYLING STARTS ////// */
+
+
+
+
+
+
+
+
+/* ////// DICTATOR HOME PAGE STYLING STARTS ////// */
+
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////// */
+/* ////// FEKEZA B-SHOWER STYLING STARTS //////////////// */
+/* /////////////////////////////////////////////// */
+/* ////////////////////////////////////////////// */
+
+
+
+/* ////// FEKEZA B-SHOWER HOME PAGE STYLING STARTS ////// */
+
+
+
+
+
+
+
+
+/* ////// FEKEZA B-SHOWER HOME PAGE STYLING STARTS ////// */
+
+
+
+
+
+/* ////////////////////////////////////////////// */
+/* ///////////////////////////////////////////// */
+/* /// TSA STUDIOS STYLING STARTS ///////////// */
+/* /////////////////////////////////////////// */
+/* ////////////////////////////////////////// */
+
+
+
+
+
+/* ////// TSA STUDIOS HOME PAGE STYLING STARTS ////// */
+
+
+
+
+
+
+
+
+
+
+/* ////// TSA STUDIOS HOME PAGE STYLING STARTS ////// */
+
+
+
+
+
+/* ////////////////////////////////////////////// */
+/* ///////////////////////////////////////////// */
+/* /// PHOTOGRAPHY STYLING STARTS ///////////// */
+/* /////////////////////////////////////////// */
+/* ////////////////////////////////////////// */
+
+/*
+
+
+/* ////// PHOTOGRAPHY HOME PAGE STYLING STARTS ////// */
+
+
+
+
+
+
+
+
+/* ////// PHOTOGRAPHY HOME PAGE STYLING ENDS ////// */
+
+
+
+
+
+
+/*///////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////*/
+/*///////// LOVE STUDIO PAGE STYLING STARTS ///////////*/
+/*////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////*/
+/*///////// RESPONSIVE MEDIA QUERIES ///////////*/
+/*/////////////////////////////////////////////*/
+/*////////////////////////////////////////////*/
+
+
+
+
+@media (max-width: 1104px) {
+    .g-star-intro{
+        font-size: 15px;
+        padding: 100px 28px 100px 28px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+        color: rgb(255, 255, 255);
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: url("images/menu-bg.jpg") no-repeat center;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+        color: #fff;
+    }
+    .max-width{
+        max-width: 930px;
+    }
+}
+
+@media (max-width: 690px) {
+}
+
+@media (max-width: 500px) {
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+    .g-star-intro{
+        font-size: 15px;
+        padding: 100px 28px 100px 28px;
+      }
+}
+
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+        color: rgb(255, 255, 255);
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: url("images/menu-bg.jpg") no-repeat center;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+        color: #fff;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+} */
+
+
+
+/* ///////// RESPONSIVE MEDIA QUERIES ////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //////// ARROW NAVBAR STYLING STARTS ////// */
+
+
+
+
+.arrowBtns{
+    background-color: #ffffff;
+}
+
+.arrowBtns a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.arrowBtns .previous{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    color: #5104FC;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.arrowBtns .next{
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+    color: #5104FC;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.arrowBtns a::after{
+    content: "";
+    width:0%;
+    height: 3px;
+    display: block;
+    background-color: #5104FC;
+    margin-top: 3px;
+}
+
+.arrowBtns a:hover::after{
+    width: 100%;
+    color: #ffffff;
+}
+
+.arrowBtns .max-width{
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.arrowBtns .blank{
+    color: #ffffff;
+}
+
+/* Opposite colors - styling */
+
+.arrowBtns-ops{
+    background-color: #5104FC;
+}
+.arrowBtns-ops .previous{
+    color: #ffffff;
+}
+.arrowBtns-ops .next{
+    color: #ffffff;
+}
+.arrowBtns-ops a::after{
+    background-color: #ffffff;
+}
+.arrowBtns-ops a:hover::after{
+    color: #5104FC;
+}
+
+
+@media screen and (max-width: 850px) {
+    .arrowBtns .previous, .arrowBtns .next{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .arrowBtns .previous, .arrowBtns .next{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .arrowBtns .previous, .arrowBtns .next{
+        font-size: 12px;
+    }
+}
+
+
+
+/* //////// ARROW NAVBAR STYLING ENDS ////// */
+
+
+
+/* //////////// GO BACK BUTTON ///////////// */
+
+
+.back-button-wrapper {
+    display: flex;
+    justify-content: left;
+  }
+  
+  .back-button {
+      display: flex;
+      padding: 10px 45px;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      color: white;
+      background: #5104FC;
+      transition: 1s;
+      box-shadow: 6px 6px 0 black;
+      transform: skewX(-15deg);
+  }
+  
+  .back-button:focus {
+     outline: none; 
+  }
+  
+  .back-button:hover {
+      transition: 0.3s;
+      box-shadow: 5px 5px 0 #ffffff;
+  }
