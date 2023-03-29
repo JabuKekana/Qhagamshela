@@ -3,18 +3,18 @@
 /* /////////////////////////////////// */
 
 
-/* 
+/*
 1. ALL SECTIONS & PAGES SIMILAR STYLING STARTS
 - Google font imports
 - Custom scroll bar styling
 - Navbar styling
-- Footer styling 
+- Footer styling
 - Menu icon & scroll up bar styling
 
 2. HOME PAGE STYLING STARTS
-- Header section 
+- Header section
 - About section
-- What we offer 
+- What we offer
 - Contant page
 
 3. PORTFOLIO SECTION STYLING STARTS
@@ -50,13 +50,13 @@ section{
     padding: 0 80px;
     margin: auto;
 }
- .home1, .about, .cta, .portfolio, .contact, footer{
+ .dictator, .about, .fekeza, .contact, footer{
     font-family: 'Poppins', sans-serif;
-} 
-.home1 .home1-content,
+}
+.dictator .dictator-content,
 .about .about-content,
-.cta .cta-content,
-.portfolio .port-content,
+.dictator .dictator-content,
+.fekeza .fekeza-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -236,7 +236,7 @@ html{
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-} 
+}
 
 
 
@@ -260,7 +260,7 @@ html{
     font-size: 30px;
     font-weight: 500;
     padding: 10px 0 0 10px;
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
     text-decoration: underline #faf8ff 1px;
     text-underline-offset: 8px;
 }
@@ -458,21 +458,20 @@ html{
 /* ///////////////////////////////////////////// */
 
 
-    
 
 
 
 
 
+/* ////// G-STAR HOME PAGE STYLING STARTS ////// */
 
 
-/* /////// HEADER SECTION STYLING STARTS /////// */
 
 
 
 .g-star-header{
     display: flex;
-    background: url("./c-images/g-star-header.png") no-repeat center;
+    background: url("./c-images/g-star-raw/g-star-header.png") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -489,15 +488,6 @@ html{
   margin-right: 0;
 }
 
-
-/* /////// HEADER SECTION STYLING ENDS /////// */
-
-
-
-
-
-/* /////// G-STAR PAGE INTRO SECTION STARTS /////// */    
-
 .g-star-intro{
     font-family: 'Ubuntu', sans-serif;
     font-size: 25px;
@@ -508,15 +498,6 @@ html{
     padding: 100px 280px 100px 280px;
 
 }
-
-/* /////// G-STAR PAGE INTRO SECTION ENDS /////// */ 
-
-
-
-
-/* /////// G-STAR HOME CONTENT SECTION STARTS /////// */
-
-
 
 .g-star-home{
   margin: 0 auto;
@@ -550,7 +531,6 @@ html{
   font-family: 'Ubuntu', sans-serif;
   color: rgb(0, 0, 0);
 }
-
 
 .content > *{
   flex: 1 1 100%;
@@ -606,7 +586,8 @@ html{
 
 
 
-/* /////// G-STAR HOME CONTENT SECTION ENDS /////// */
+/* ////// G-STAR HOME PAGE STYLING ENDS ////// */
+
 
 
 
@@ -620,6 +601,8 @@ html{
 /* ///////////////////////////////////////////// */
 
 
+
+/* ////// NIVEA HOME PAGE STYLING STARTS ////// */
 
 
 
@@ -647,7 +630,7 @@ html{
     padding: 30px;
     background-color: #ffffff;
   }
-  
+
   .nivea-home-title{
     font-family: 'Ubuntu', sans-serif;
     color: #5104FC;
@@ -656,12 +639,12 @@ html{
     margin: 0 0 30px 0;
     letter-spacing: 1px;
   }
-  
+
   .content-nivea-home{
     display: flex;
     align-items: center;
   }
-  
+
   .content{
     display: flex;
     flex-wrap: wrap;
@@ -673,12 +656,12 @@ html{
     font-family: 'Ubuntu', sans-serif;
     color: rgb(0, 0, 0);
   }
-  
-  
+
+
   .content > *{
     flex: 1 1 100%;
   }
-  
+
   .nivea-home .nivea-heading{
     font-family: 'Ubuntu', sans-serif;
     color: #5104FC;
@@ -695,6 +678,172 @@ html{
     text-transform: uppercase;
     margin-top: 50px;
   }
+
+  .content .content-h{
+    font-family: 'Ubuntu', sans-serif;
+    background: #243351;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 15px 0;
+    margin: 22px 0;
+    border-radius: 25px;
+    transition: .3s ease;
+  }
+
+  .content a:hover{
+      margin: 22px 0;
+      background: none;
+      color: #243351;
+      text-decoration: none;
+      text-transform: uppercase;
+      border: 1px solid #243351;
+      padding: 15px 0;
+      border-radius: 25px;
+      transition: .3s ease;
+  }
+
+  .content-nivea-home img{
+      width: 100%;
+  }
+
+  @media (max-width: 900px) {
+    .content-nivea-home{
+      display: flex;
+      flex-direction: column;
+    }
+    .nivea-intro{
+      font-size: 15px;
+      padding: 100px 28px 100px 28px;
+    }
+  }
+
+
+
+/* ////// NIVEA HOME PAGE STYLING ENDS ////// */
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////////////////// */
+/* //////////////////////////////////////////////// */
+/* ////// DICTATOR PAGES STYLING STARTS ///////////// */
+/* ////////////////////////////////////////////// */
+/* ///////////////////////////////////////////// */
+
+
+
+
+
+/* /////// DICTATOR HOME PAGE STYLING STARTS ////// */
+
+
+
+.dictator{
+    background: #5104FC;
+}
+
+.dictator .dictator-content .left{
+    width: 55%;
+}
+
+.dictator .dictator-content .left img{
+    width: 80%;
+}
+
+.dictator .dictator-content .right{
+    width: 45%;
+}
+
+.dictator .dictator-content .right h2{
+    color: #fff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.913));
+    font-size: 45px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.dictator .dictator-content .right .text2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+
+.dictator .dictator-content .right a{
+    display: inline-block;
+    background: #243351;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 10px 30px;
+    margin: 20px 0 40px 0;
+    border-radius: 280px;
+    transition: all 0.3s ease;
+}
+
+.dictator .dictator-content .right a:hover{
+    color: #ffffff;
+    background: none;
+    border: 2px solid #ffffff;
+}
+
+.typing{
+    color:#ffffff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.913));
+    font-size: 26px;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+.dictator-home{
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    background-color: #ffffff;
+  }
+.dictator-home-title{
+    font-family: 'Ubuntu', sans-serif;
+    color: #5104FC;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.513));
+    font-size: 40px;
+    margin: 0 0 30px 0;
+    letter-spacing: 1px;
+  }
+
+.content-dictator-home{
+    display: flex;
+    align-items: center;
+  }
+  
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 0px;
+    padding: 20px;
+    transition: all .3s ease;
+    background-color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(0, 0, 0);
+  }
+  
+.content > *{
+    flex: 1 1 100%;
+  }
+  
+.content h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    color: #5104FC;
+    letter-spacing: 1px;
+  }
   
   .content .content-h{
     font-family: 'Ubuntu', sans-serif;
@@ -710,7 +859,7 @@ html{
     transition: .3s ease;
   }
   
-  .content a:hover{
+.content a:hover{
       margin: 22px 0;
       background: none;
       color: #243351;
@@ -722,141 +871,607 @@ html{
       transition: .3s ease;
   }
   
-  .content-nivea-home img{
+  .content-dictator-home img{
       width: 100%;
   }
   
   @media (max-width: 900px) {
-    .content-nivea-home{
+    .content-dictator-home{
       display: flex;
       flex-direction: column;
     }
-    .nivea-intro{
-      font-size: 15px;
-      padding: 100px 28px 100px 28px;
+  }
+
+
+
+
+
+
+@media (max-width: 1104px) {
+    .dictator .dictator-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 947px){
+    .dictator .dictator-content .column{
+        width: 100%;
+    }
+    .dictator .dictator-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .dictator .dictator-content .right{
+        flex: 100%;
+    }
+}
+
+
+
+
+/* ////// DICTATOR HOME PAGE STYLING STARTS ////// */
+
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////// */
+/* ////// FEKEZA B-SHOWER STYLING STARTS //////////////// */
+/* /////////////////////////////////////////////// */
+/* ////////////////////////////////////////////// */
+
+
+
+/* ////// FEKEZA B-SHOWER HOME PAGE STYLING STARTS ////// */
+
+
+
+
+.fekeza-header{
+    display: flex;
+    background: url("./c-images/Fekeza/fkz-baby-shower-5.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.fekeza-header .max-width{
+  width: 100%;
+  display: flex;
+}
+
+.fekeza-header .max-width .row{
+  margin-right: 0;
+}
+
+ .fekeza-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  .fekeza-column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+
+  .fekeza-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 800px) {
+    .fekeza-column {
+      flex: 50%;
+      max-width: 50%;
     }
   }
-  
-
-
-/* /////// NIVEA PAGE INTRO SECTION ENDS /////// */ 
-
-
-
-
-
+  @media screen and (max-width: 600px) {
+    .fekeza-column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
 
 
 
+/* ////// FEKEZA B-SHOWER HOME PAGE STYLING STARTS ////// */
 
-/* ///////////////////////////////////////////////// */
-/* //////////////////////////////////////////////// */
-/* ////// NIVEA PAGES STYLING STARTS ///////////// */
+
+
+
+
 /* ////////////////////////////////////////////// */
 /* ///////////////////////////////////////////// */
+/* /// TSA STUDIOS STYLING STARTS ///////////// */
+/* /////////////////////////////////////////// */
+/* ////////////////////////////////////////// */
 
 
 
 
 
-/* /////// CALL TO ACTION SECTION STYLING STARTS ////// */
+/* ////// TSA STUDIOS HOME PAGE STYLING STARTS ////// */
 
 
 
-.cta{
-    background: #5104FC;
+
+.tsa-studio-container h1{
+    color: #fff;
+    margin: 0;
+    width: 100vh;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 3px;
 }
 
-.cta .cta-content .left{
-    width: 55%;
-}
-
-.cta .cta-content .left img{
+.tsa-studio-container p{
+    color: #fff;
+    margin: 0 ;
+    padding: 0 15px 0 15px;
     width: 100%;
-    object-fit: 100%;
-    border-radius: 16px;
-    margin-right: 10px;
-    border-radius: 35%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
 }
 
-.cta .cta-content .right{
-    width: 45%;
-}
-
-.cta .cta-content .right h2{
-    color: #fff;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.913));
-    font-size: 45px;
-    font-weight: 300;
-    margin-bottom: 40px;
-}
-
-.cta .cta-content .right .text2{
-    color: #fff;
-    font-size: 30px;
-    font-weight: 200;
-    margin-bottom: 40px;
-}
-
-.cta .cta-content .right a{
-    display: inline-block;
-    background: #243351;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 100;
-    padding: 10px 30px;
-    margin: 20px 0 40px 0;
+.tsa-studio-btn {
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
     border-radius: 280px;
-    transition: all 0.3s ease;
+    outline-color: rgba(255, 255, 255, 0.5);
+    outline-offset: 0px;
+    text-shadow: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
 }
 
-.cta .cta-content .right a:hover{
+.tsa-studio-btn:hover {
+    border: 1px solid;
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+}
+
+.tsa-studio-container {
+    margin-top: 50px;
+    background-image: url("./c-images/Tsa-studios/tsa-studios-home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    box-align: center;
+    align-items: center;
+}
+
+
+
+
+
+/* ////// TSA STUDIOS HOME PAGE STYLING STARTS ////// */
+
+
+
+
+
+/* ////////////////////////////////////////////// */
+/* ///////////////////////////////////////////// */
+/* /// PHOTOGRAPHY STYLING STARTS ///////////// */
+/* /////////////////////////////////////////// */
+/* ////////////////////////////////////////// */
+
+/*
+
+
+/* ////// PHOTOGRAPHY HOME PAGE STYLING STARTS ////// */
+
+
+.photography-header {
+    margin-top: 50px;
+    background-image: url("./c-images/Photography/photography-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    box-align: center;
+    align-items: center;
+}
+
+.photography-header h1{
     color: #ffffff;
-    background: none;
-    border: 2px solid #ffffff;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.913));
+    margin: 0;
+    width: 100vh;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 500;
+    letter-spacing: 3px;
 }
 
-.typing{
+.photography-focalistic{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
     color:#ffffff;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.913));
-    font-size: 26px;
-    font-weight: 200;
+    background-color: #5104FC;
+    text-align: center;
+    padding: 70px 0 80px 0;
+}
+
+.photography-focalistic h1{
+    font-size: 230px;
     margin-bottom: 40px;
 }
 
-
-/* responsive media query start */
-@media (max-width: 1104px) {
-    .home1 .home1-content .left img{
-        height: 350px;
-        width: 350px;
-    }
+.photography-focalistic img{
+    color: #000000;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
 }
-
-@media (max-width: 1104px) {
-    .about .about-content .right img{
-        height: 350px;
-        width: 350px;
-    }
+.all-photogrid{
+    background-color: #5104FC;
 }
 
 
 
-/* /////// CALL TO ACTION SECTION STYLING ENDS ////// */
 
 
 
+/* 1st Grid */
+
+
+.photoGrid1 {
+    box-sizing: border-box;
+    background-color: #5104FC;
+    margin-bottom: 140px;
+ }
+ h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 120px;
+    margin-bottom: 70px;
+ }
+ .photoGrid1 .outer-grid {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .photoGrid1 .outer-grid .inner-grid {
+    flex: 25%;
+    padding: 10px 10px 10px 10px;
+ }
+ .photoGrid1 .outer-grid .inner-grid img {
+    margin-top: 8px;
+    width: 100%;
+ }
+ @media screen and (max-width: 800px) {
+    .inner-grid {
+       flex: 100%;
+       max-width: 50%;
+    }
+ }
+ @media screen and (max-width: 600px) {
+    .inner-grid {
+       flex: 100%;
+       max-width: 100%;
+    }
+ }
 
 
 
-
-
-/* ///////// RESPONSIVE MEDIA QUERIES ////////// */
+/* 2nd Grid */
  
+.content:after, .gallery:after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+   
+  .photoGrid2 {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    margin-bottom: 140px;
+    background-color: #5104FC;
+  }
+  .photoGrid2:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }   
+  .content {
+    padding: 4.347826087%;
+  }
+  .content img {
+    width: 100%;
+  }   
+  .gallery {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  .gallery li {
+    width: 21.7391304348%;
+    float: left;
+    text-align: center;
+    position: relative;
+    margin-bottom: 4.347826087%;
+    display: inline-block;
+  }
+  .gallery li:nth-child(4n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  .gallery li:nth-child(4n + 2) {
+    margin-left: 26.0869565217%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .gallery li:nth-child(4n + 3) {
+    margin-left: 52.1739130435%;
+    margin-right: -100%;
+    clear: none;
+  }
+  .gallery li:nth-child(4n + 4) {
+    margin-left: 78.2608695652%;
+    margin-right: -100%;
+    clear: none;
+  }
+  @media (max-width: 48rem) {
+    .gallery li {
+      width: 30.4347826087%;
+      float: left;
+    }
+    .gallery li:nth-child(3n + 1) {
+      margin-left: 0;
+      margin-right: -100%;
+      clear: both;
+      margin-left: 0;
+    }
+    .gallery li:nth-child(3n + 2) {
+      margin-left: 34.7826086957%;
+      margin-right: -100%;
+      clear: none;
+    }
+    .gallery li:nth-child(3n + 3) {
+      margin-left: 69.5652173913%;
+      margin-right: -100%;
+      clear: none;
+    }
+  }
+  @media (max-width: 30rem) {
+    .gallery li {
+      width: 47.8260869565%;
+      float: left;
+    }
+    .gallery li:nth-child(2n + 1) {
+      margin-left: 0;
+      margin-right: -100%;
+      clear: both;
+      margin-left: 0;
+    }
+    .gallery li:nth-child(2n + 2) {
+      margin-left: 52.1739130435%;
+      margin-right: -100%;
+      clear: none;
+    }
+  }
+  @media (max-width: 20rem) {
+    .gallery li {
+      width: 100%;
+      float: left;
+    }
+    .gallery li:nth-child(1n + 1) {
+      margin-left: 0;
+      margin-right: -100%;
+      clear: both;
+      margin-left: 0;
+    }
+  }
+  .gallery li .imgwrap {
+    background-color: #fff;
+    padding: 2px;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.1);
+  }
+  .gallery li img {
+    width: 100%;
+    vertical-align: top;
+    -webkit-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  @media (max-width: 20rem) {
+    .gallery li img {
+      width: 100%;
+    }
+  }
 
 
 
-@media (max-width: 1104px) {  
+
+/* 3rd Image Grid */
+
+.photoGrid3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.photoGrid3 > li {
+  flex-basis: 350px; /* width: 350px; */
+  list-style-type: none
+}
+
+.photoGrid3 li img {
+  object-fit: cover;
+  width: 100%;
+  height: 340px;
+  vertical-align: middle;
+  border-radius: 15px;
+}
+
+
+
+
+@media screen and (max-width: 850px) {
+    .photography-header h1{
+        font-size: 23px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .photography-focalistic h1{
+        font-size: 50px;
+    }
+}
+@media (max-width: 690px) {
+    .photography-header h1{
+        font-size: 30px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .photography-focalistic h1{
+        font-size: 50px;
+    }
+}
+@media (max-width: 500px) {
+    .photography-header h1{
+        font-size: 50px;
+    }
+    h1{
+        font-size: 43px;
+    }
+    .photography-focalistic h1{
+        font-size: 50px;
+    }
+}
+
+
+
+
+
+
+/* ////// PHOTOGRAPHY HOME PAGE STYLING ENDS ////// */
+
+
+
+
+
+
+/*///////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////*/
+/*///////// LOVE STUDIO PAGE STYLING STARTS ///////////*/
+/*////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////*/
+
+
+
+
+
+
+.love-studio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #5104FC;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .love-studio-grid img {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .love-studio-grid img:nth-child(1),
+  .love-studio-grid img:nth-child(2),
+  .love-studio-grid img:nth-child(3),
+  .love-studio-grid img:nth-child(4),
+  .love-studio-grid img:nth-child(5),
+  .love-studio-grid img:nth-child(6),
+  .love-studio-grid img:nth-child(7),
+  .love-studio-grid img:nth-child(8) {
+    width: 12.0%;
+    padding: 5px 5px 5px 5px;
+    margin-top: 90px;
+  }
+  .love-studio-grid img:nth-child(10){
+    width: 13.5%;
+    padding: 5px 5px 5px 5px;
+    margin: 5px; 
+  }    
+  .love-studio-grid img:nth-child(9),
+  .love-studio-grid img:nth-child(11) {
+    width: 40.5%;
+    padding: 5px 5px 5px 5pxx;
+  }
+  .love-studio-grid img:nth-child(14) {
+    width: 40.7%;
+    padding: 5px 5px 5px 5pxx;
+    margin: 5px; 
+  } 
+  .love-studio-grid img:nth-child(12),
+  .love-studio-grid img:nth-child(13),
+  .love-studio-grid img:nth-child(15),
+  .love-studio-grid img:nth-child(16) {
+    width: 13.6%;
+    padding: 5px 5px 5px 5px;
+  }
+
+
+@media screen and (max-width:800px){
+  .love-studio-grid img{
+    flex:100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+/*////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////*/
+/*///////// RESPONSIVE MEDIA QUERIES ///////////*/
+/*/////////////////////////////////////////////*/
+/*////////////////////////////////////////////*/
+
+
+
+
+@media (max-width: 1104px) {
     .g-star-intro{
         font-size: 15px;
         padding: 100px 28px 100px 28px;
@@ -967,7 +1582,7 @@ html{
     .max-width{
         padding: 0 23px;
     }
-}
+} */
 
 
 
@@ -986,6 +1601,7 @@ html{
 
 
 /* //////// ARROW NAVBAR STYLING STARTS ////// */
+
 
 
 
@@ -1029,8 +1645,8 @@ html{
 }
 
 .arrowBtns .max-width{
-     display: flex; 
-    align-items: center; 
+     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -1039,10 +1655,28 @@ html{
     color: #ffffff;
 }
 
+/* Opposite colors - styling */
+
+.arrowBtns-ops{
+    background-color: #5104FC;
+}
+.arrowBtns-ops .previous{
+    color: #ffffff;
+}
+.arrowBtns-ops .next{
+    color: #ffffff;
+}
+.arrowBtns-ops a::after{
+    background-color: #ffffff;
+}
+.arrowBtns-ops a:hover::after{
+    color: #5104FC;
+}
+
 
 @media screen and (max-width: 850px) {
     .arrowBtns .previous, .arrowBtns .next{
-        font-size: 23px;
+        font-size: 20px;
     }
 }
 
@@ -1061,3 +1695,39 @@ html{
 
 
 /* //////// ARROW NAVBAR STYLING ENDS ////// */
+
+
+
+/* //////////// GO BACK BUTTON STYLING STARS ///////////// */
+
+
+.back-button-wrapper {
+  display: flex;
+  justify-content: left;
+}
+
+.back-button {
+    display: flex;
+    padding: 10px 45px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: white;
+    background: #5104FC;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+}
+
+.back-button:focus {
+   outline: none; 
+}
+
+.back-button:hover {
+    transition: 0.3s;
+    box-shadow: 5px 5px 0 #ffffff;
+}
+
+
+
+/* //////////// GO BACK BUTTON STYLING ENDS ///////////// */
