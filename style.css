@@ -553,6 +553,9 @@ html{
     margin-left: 40px;
     list-style-type: square;
 }
+.home1 .home1-content p{
+    font-size: 18px;
+}
 
 
 
@@ -571,11 +574,12 @@ html{
 .bottom-container a{
     display: block;
     background-color: #243351;
-    border-radius: 20px;
+    border-radius: 40px;
     color: rgb(255, 255, 255);
     text-align: center;
     text-decoration: none;
     margin:0 25.3rem 0 25.3rem;
+    padding: 5px 0px 5px 0px;
 }
 
 .bottom-container a:hover{
@@ -672,7 +676,7 @@ html{
   color: #000000;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.913));
   font-size: 40px;
-  margin: 0 0 30px 0;
+  margin: 0 5px 30px 5px;
   letter-spacing: 1px;
 }
 
@@ -700,11 +704,18 @@ html{
 
 .content h2{
   font-family: 'Ubuntu', sans-serif;
-  font-size: 25px;
+  font-size: 23px;
   margin: 16px 0;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
+.cards h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }  
 
 .content p{
   font-family: 'Ubuntu', sans-serif;
@@ -723,6 +734,10 @@ html{
   padding: 15px 0;
   border-radius: 25px;
   transition: .3s ease;
+}
+
+.blank-text{
+    color:white ;
 }
 
 .content a:hover{
@@ -763,6 +778,19 @@ html{
 
 .home-componies{
     margin: 0;
+}
+
+.home-componies p{
+    text-align: center;
+    margin-bottom: 80px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.913));
+    font-size: 40px;
+    margin: 0 5px 30px 5px;
+    letter-spacing: 1px;
 }
 
 .image-list-small {
@@ -891,6 +919,54 @@ html{
 
 
 /* /////// CALL TO ACTION SECTION STYLING ENDS ////// */
+
+
+
+
+
+
+/* /////// CALL TO ACTION PARAGRAGH STYLING STARTS ////// */
+
+
+
+
+.cta-paragragh{
+    color: #ffffff;
+    background-color: #5104FC;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+    padding: 0 30px 0 30px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.cta-paragragh h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    padding-top: 50px;
+}
+
+.cta-paragraph1{
+    background-color: #5104FC; 
+    text-align: center;  
+}
+.cta-paragraph1 .connect-text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    color: #5104FC;
+    background-color: #5104FC;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+
+}
+  
+
+
+
+/* /////// CALL TO ACTION PARAGRAGH STYLING ENDS ////// */
+
 
 
 
@@ -1287,7 +1363,7 @@ html{
     border-color: #6271f0;
   }
   
-  .btn input[type="submit"]{
+  .submit-btn{
     background: #5104FC;
     border: 1px solid #5104FC;
     padding: 10px;
@@ -1299,7 +1375,7 @@ html{
     color: #fff;
   }
 
-  .btn input[type="submit"]:hover{
+  .submit-btn:hover{
   color: #ffffff;
   background: none;
   border: 2px solid #ffffff;

@@ -74,63 +74,134 @@
  
 
 <section class="scheduling-form">
-<div class="wrapper">
-    <div class="form_container">
-        <form name="form">
-        <div class="heading">
-            <h2>Schedule Meeting</h2>
-        </div>
-        <div class="form_wrap fullname">
-            <div class="form_item">
-                <label>First Name *</label>
-                <input type="text" required>
-                    <div class="error" id="fname"></div>  
-            </div>
-            <div class="form_item">
-                <label>Last Name *</label>
-                <input type="text" required>
-                <div class="error" id="lname"></div>  
-            </div>
-        </div>
-        <div class="form_wrap">
-            <div class="form_item">
-                <label>Email Address *</label>
-                <input type="text" required>
-                <div class="error" id="email"></div>  
-            </div>
-        </div>
-        <div class="form_wrap">
-            <div class="form_item">
-                <label>Phone *</label>
-                <input type="text" required>
-                <div class="error" id="phone"></div>  
-            </div>
-        </div> 
-        <div class="form_wrap">
-          <div class="form_item">
-              <label>Website *</label>
-              <input type="text" placerholder="http://" required>
-              <div class="error" id="email"></div>  
-          </div>
-      </div> 
-      <div class="form_wrap">
-        <div class="form_item">
-            <label>Preferred Date *</label>
-            <input type="date" id="checkin-date" required>
-            <div class="error" id="phone"></div>  
-        </div>
-    </div> 
-    </div>
+    <div class="wrapper">
+        <div class="form_container">
+            <!-- <form name="form" id="form">
+                <div class="heading">
+                    <h2>Schedule Meeting</h2>
+                </div>
+                <div class="form_wrap fullname">
+                    <div class="form_item">
+                        <label>First Name *</label>
+                        <input type="text" name="First Name" required>
+                        <div class="error" id="fname"></div>  
+                    </div>
+                    <div class="form_item">
+                        <label>Last Name *</label>
+                        <input type="text" name="Last Name" required>
+                        <div class="error" id="lname"></div>  
+                    </div>
+                </div>
+                <div class="form_wrap">
+                    <div class="form_item">
+                        <label>Email Address *</label>
+                        <input type="text" name="Email" required>
+                        <div class="error" id="email"></div>  
+                    </div>
+                </div>
+                <div class="form_wrap">
+                    <div class="form_item">
+                        <label>Phone *</label>
+                        <input type="text" name="Phone" required>
+                        <div class="error" id="phone"></div>  
+                    </div>
+                </div> 
+                <div class="form_wrap">
+                    <div class="form_item">
+                        <label>Website *</label>
+                        <input type="text" name="Website" placerholder="http://" required>
+                        <div class="error" id="email"></div>  
+                    </div>
+                </div> 
+                <div class="form_wrap">
+                    <div class="form_item">
+                    <label>Preferred Date *</label>
+                    <input type="date" name="Preferred Date" id="checkin-date" required>
+                    <div class="error" id="phone"></div>  
+                </div>
+                    <button  type="submit" id="submit" class="submit-btn" value="submit">Submit</button> -->
+                    
+<!--TEST FROM-->
 
-    <div class="btn">
-      <input type="submit" value="Submit">
+
+            <form id="form">
+                <div class="heading">
+                    <h2>Schedule Meeting</h2>
+                </div>
+                <div class="form_wrap fullname">
+                    <div class="form_item">
+                        <label>First Name *</label>
+                        <input type="text" name="First Name" required>
+                        <div class="error" id="fname"></div>  
+                    </div>
+                    <div class="form_item">
+                        <label>Last Name *</label>
+                        <input type="text" name="Last Name" required>
+                        <div class="error" id="lname"></div>  
+                    </div>
+                </div>
+                <div class="form_wrap">
+                    <div class="form_item">
+                        <label>Email Address *</label>
+                        <input type="text" name="Email" required>
+                        <div class="error" id="email"></div>  
+                    </div>
+                </div>
+                <div class="form_wrap">
+                    <div class="form_item">
+                        <label>Phone *</label>
+                        <input type="text" name="Phone" required>
+                        <div class="error" id="phone"></div>  
+                    </div>
+                </div> 
+                <div class="form_wrap">
+                    <div class="form_item">
+                        <label>Website *</label>
+                        <input type="text" name="Website" placerholder="http://" required>
+                        <div class="error" id="email"></div>  
+                    </div>
+                </div> 
+                <div class="form_wrap">
+                    <div class="form_item">
+                    <label>Preferred Date *</label>
+                    <input type="date" name="Preferred Date" id="checkin-date" required>
+                    <div class="error" id="phone"></div>  
+                </div>
+                <button  class="submit-btn" type="submit" id="submit">Submit</button>
+            </form>
+        </div>
     </div>
-    </form>
-  </div>
-  </div>
 </section>
  
-  
+
+
+<!-- Scheduling Form Submittion -->
+
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzt9ieAToWHR8d6qB--fn2LEn2ksGtr8jKV0pXUcCJUtz5eDGapUOuhb5amc5dIHLvW/exec';
+const form = document.querySelector('#form');
+const btn = document.querySelector('#submit');
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  btn.disabled = true;
+  btn.innerHTML = "Loading...";
+
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+      if (response.ok) {
+        window.location.href = "thankyou.html";
+      } else {
+        throw new Error('Error occurred during form submission');
+      }
+    })
+    .catch(error => {
+      btn.disabled = false;
+      btn.innerHTML = "Submit";
+      alert('Error!', error.message);
+    });
+});
+ </script>
 
 <!-- CONTACT FORM SECTION ENDS -->
 
@@ -174,6 +245,6 @@
 <!-- FOOTER SECTION ENDS -->
 
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
